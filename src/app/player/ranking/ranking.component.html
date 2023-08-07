@@ -1,0 +1,33 @@
+<div>
+  <table mat-table [dataSource]="players">
+    <ng-container matColumnDef="ranking" >
+      <th mat-header-cell *matHeaderCellDef>
+        Rank
+      </th>
+      <td mat-cell *matCellDef="let p">
+        {{p.ranking}}
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="name" >
+      <th mat-header-cell *matHeaderCellDef>
+        Name
+      </th>
+      <td mat-cell *matCellDef="let p">
+        {{p.name}}
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="points" >
+      <th mat-header-cell *matHeaderCellDef>
+        Points
+      </th>
+      <td mat-cell *matCellDef="let p">
+        {{p.points}}
+      </td>
+    </ng-container>
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  <span *ngIf="!players.length">No player in tournament</span>
+</div>

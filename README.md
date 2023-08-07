@@ -1,27 +1,39 @@
-# RankingFront
+# Ranking
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.7.
+GUI to see ranking in a tournament
 
-## Development server
+## 🧐 Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This application allow to visualize the ranking of all players
 
-## Code scaffolding
+This site needs the API from [Ranking API](https://github.com/Jicay/ranking).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🛠️ Installation Steps
 
-## Build
+### Prerequisites
+You need to have node (tested with v18.14.2) and Angular CLI. 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+### Steps
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Start the Ranking API.
 
-## Running end-to-end tests
+2. Run the command 
+``` shell
+ng serve
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. In your browser, go to  
 
-## Further help
+``` 
+http://localhost:4200
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 💻 Built with
+
+Technologies used in the project:
+
+* Typescript
+* Angular
+* Jasmine
+* ESLint
